@@ -12,6 +12,7 @@ spec:
       containers:
         - name: nginx
           image: gcr.io/PROJECT_ID/IMAGE:TAG
+          imagePullPolicy: Always
   replicas: 1
   selector:
     matchLabels:
