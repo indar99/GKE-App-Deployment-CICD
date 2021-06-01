@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:latest
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
   replicas: 1
   selector:
     matchLabels:
