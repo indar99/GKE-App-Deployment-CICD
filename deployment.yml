@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          image: gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
           imagePullPolicy: Always
   replicas: 1
   selector:
