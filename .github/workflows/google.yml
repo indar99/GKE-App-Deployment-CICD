@@ -15,15 +15,15 @@ name: Build and Deploy to GKE
 on:
   push:
     branches:
-    - main
+    - master
   pull_request:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: my-gke-cluster    # TODO: update to cluster name
+  GKE_CLUSTER: cluster-1    # TODO: update to cluster name
   GKE_ZONE: us-central1 # TODO: update to cluster zone
   DEPLOYMENT_NAME: mydep # TODO: update to deployment name
-  IMAGE: gke-nginxapp-image
+  IMAGE: gke-nginxapp-image10
   TAG: 1.0.0
 
 jobs:
